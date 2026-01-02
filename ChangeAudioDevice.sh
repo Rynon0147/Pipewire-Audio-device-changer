@@ -7,7 +7,7 @@ echo -e "\n------------------------------"
 read -p "Enter your Sink ID: " sink
 echo "------------------------------"
 
-pactl list sink-inputs | grep -e 'Sink Input #[[:digit:]]' -e "application.name = "#| sed '/./{N; /application\.name = /!d;s/application\.name = "//; s/"//;}'
+pactl list sink-inputs | grep -e 'Sink Input #[[:digit:]]' -e "application.name = "
 
 echo -e "\n------------------------------"
 read -p " Enter your Sink Input ID: " sink_input
